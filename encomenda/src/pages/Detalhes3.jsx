@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Marmitex from "../assets/Marmitex.png";
 import Footer from "../components/Footer";
+import "../styles/details.css";
 
 function Marmita() {
   return (
