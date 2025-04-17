@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import HotDog2 from "../assets/Hot-Dog2.png";
 import Footer from "../components/Footer";
+import "../styles/details.css";
 
 function HotDog() {
   return (
