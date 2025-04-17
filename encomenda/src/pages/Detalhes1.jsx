@@ -8,7 +8,8 @@ function Lanche() {
               <NavBar />
             <img src={Combo1} alt="X-Ratão" />
             <h1>Combo X-Ratão</h1>
-            <p>Ingredientes : Pão com Gergilim, Cebola Crispy, Maionese Caseira, 2 Hamburgueres, Queijo, Bacon em Fatias, 100G DE Batata Frita e Uma lata de Coca-Cola 350ml.</p>
+            <p>Ingredientes : Pão com Gergilim, Cebola Crispy, Maionese Caseira, 2 Hamburgueres, Queijo, Bacon em Fatias, <br />100G DE Batata Frita e Uma lata de Coca-Cola 350ml.</p>
+            <p>Preço: R$ 30,00</p>
         </div>
     )
 }
