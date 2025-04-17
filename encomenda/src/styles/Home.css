@@ -1,0 +1,31 @@
+.Main{
+    border-radius: 20px;
+    background-color: #fff7ed;
+    padding: 5em;
+}
+
+header{
+    background-color: #fff2e2;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.title{
+    background-color: #fed7aa;
+    padding: 10px;
+    padding-bottom: 20px;
+border-radius: 20px;
+
+p{
+    font-size: 0.4em;
+}
+}
+
+img{
+    max-width: 100%;
+}
+
+.carim{
+    width: 50vw;
+
+}
