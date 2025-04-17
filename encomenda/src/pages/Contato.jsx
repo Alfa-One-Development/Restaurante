@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import '../styles/Contato.css'
 
 function Contato() {
   const [contato1, setContato1] = useState(() => {
