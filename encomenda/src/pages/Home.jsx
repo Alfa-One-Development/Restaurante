@@ -29,7 +29,7 @@ function Home() {
         <p>Telefone: 📞(19)9099090 0090</p></h1>
         </header>
       <div className="Carrousel">
-          {carrousel == 0 ? <img src={Combo} alt="carrouselFront" className="carim" /> : ""}
+          {carrousel == 0 ? <img src={Combo} alt="carrouselFront" className="carimc" /> : ""}
           {carrousel == 1 ? <img src={HotDog} alt="carrouselFront" className="carim" /> : ""}
           {carrousel == 2 ? <img src={Marmitex} alt="carrouselFront" className="carim" /> : ""}
         </div>
