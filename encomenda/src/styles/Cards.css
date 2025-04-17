@@ -3,7 +3,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background-color: brown;
+    background-color: #991b1b;
+    color: white;
     flex-wrap: wrap;
 
     padding: 2em;
@@ -21,5 +22,31 @@
         height: 15em;
         width: 20em;
         object-fit: cover;
+        border-radius: 20px;
     }
+
+    h2{
+        text-decoration: underline;
+    }
+}
+
+.bigcard{
+    background-color: #ef4444;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    a::hover{
+       color: aqua;
+    }
+}
+.bigercard{
+    background-color: #f87171;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Card::hover{
+    background-color: #f87171;
 }
