@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import "../styles/details.css";
 
 function Lanche() {
+
   return (
     <div>
       <NavBar />
@@ -20,6 +21,7 @@ function Lanche() {
       </section>
     </div>
   );
+
 }
 
 export default Lanche;

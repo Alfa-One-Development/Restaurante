@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-
-
-
+import '../styles/Contato.css'
 
 function Contato(){
    const [contato1, setContato1] = useState('')
@@ -23,32 +21,32 @@ function Contato(){
 
    return(
       
-         <div>
+         <div className="box">
            <h2>Contato</h2>
            <br></br>
            <br></br>
            <form>Nome:
             
-            <input
+            <input className="input"
             type="text"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
-            placeholder= {`Digite seu ${contato1}`}
+            placeholder= {`Digite seu nome`}
             />
             </form>
             <br></br>
             <form>Email:
-            <input
+            <input className="input"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder= {`Digite seu ${contato1}`}
+            placeholder= {`${nome} Digite seu email`}
             />
             </form>
 <br></br>
             <form>Sexo:
            
-           <input
+           <input 
              type="radio"
              value="Masculino"
              checked={contato1 === "Masculino"}

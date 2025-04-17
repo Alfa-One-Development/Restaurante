@@ -24,7 +24,8 @@ function HotDog() {
               <NavBar />
               <img src={HotDog2} alt="Dogão" />
       <h1>Dogão</h1>
-      <p>Ingredientes : Pão, 2 Salcichas, Purê de Batata, Vinagrete, Queijo Ralado, Batata Palha, Bacon em Cubos e Catupiry </p>
+      <p>Ingredientes : Pão, 2 Salcichas, Purê de Batata, Vinagrete, <br  />Queijo Ralado, Batata Palha, Bacon em Cubos e Catupiry </p>
+      <p>Preço: R$ 20,00</p>
       </div>
     )*/
   }

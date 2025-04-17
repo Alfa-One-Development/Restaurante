@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import '../styles/Nav.css'
 
-
 function NavBar(){
     return(
         <header>
@@ -15,6 +14,7 @@ function NavBar(){
             <br/>
             <Link to="/lanche3">🍽</Link>
             <br/>
+            <Link to="/contato">📞Contato</Link>
          
         </nav>
         </header>
