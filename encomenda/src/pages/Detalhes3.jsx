@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar";
+import NavBar from '../components/NavBar'
 import Marmitex from '../assets/Marmitex.png'
 
 function Marmita() {
