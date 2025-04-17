@@ -1,48 +1,44 @@
 import Header from "../components/Header";
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 import Produtos from "../components/Produto";
-
-import { Carousel } from "react-bootstrap";
-
 import Combo from "../assets/Combo1.png";
 import HotDog from "../assets/Hot-Dog2.png";
 import Marmitex from "../assets/Marmitex.png";
-
-import "bootstrap/dist/css/bootstrap.min.css";
+import '../styles/Home.css'
+import { useEffect, useState } from "react";
 
 function Home() {
+  const [carrousel, setCarrousel] = useState(1)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCarrousel(carrousel => carrousel + 1)
+      if (carrousel >= 2) {
+        setCarrousel(0)
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  })
 
   return (
     <>
-      <Header/>
       <section className="Main">
-      <Carousel >
-            <Carousel.Item>
-              <img
-                src={Combo}
-                loading="lazy"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={HotDog}
-                loading="lazy"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={Marmitex}
-                loading="lazy"
-              />
-            </Carousel.Item>
+        <header>
+      <Header />
+        <h1 className="title">Comida por encomenda! <br />
+        <p>Telefone: 📞(19)9099090 0090</p></h1>
+        </header>
+      <div className="Carrousel">
+          {carrousel == 0 ? <img src={Combo} alt="carrouselFront" className="carim" /> : ""}
+          {carrousel == 1 ? <img src={HotDog} alt="carrouselFront" className="carim" /> : ""}
+          {carrousel == 2 ? <img src={Marmitex} alt="carrouselFront" className="carim" /> : ""}
+        </div>
 
-          </Carousel>
-
-          <Produtos/>
+      <Produtos />
 
       </section>
 
-      <Footer/>
+      <Footer />
     </>
   )
 }

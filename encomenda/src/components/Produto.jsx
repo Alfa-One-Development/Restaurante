@@ -2,7 +2,7 @@ import Combo from "../assets/Combo1.png";
 import HotDog from "../assets/Hot-Dog2.png";
 import Marmitex from "../assets/Marmitex.png";
 import Card from "../components/CardComida";
-import '../Style/Card.css'
+import '../styles/Card.css'
 
 function CardComida(){
     const Comida = {
@@ -40,9 +40,9 @@ function CardComida(){
 
             <article className="Cards">
 
-            <Card props = {Comida.lanche1}/>
-            <Card props = {Comida.lanche2}/>
-            <Card props = {Comida.lanche}/>
+            <Card props = {Comida.Combo}/>
+            <Card props = {Comida.Dog}/>
+            <Card props = {Comida.Marmitex}/>
 
             </article>
 
