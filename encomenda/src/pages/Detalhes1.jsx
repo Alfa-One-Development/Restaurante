@@ -1,4 +1,4 @@
-import Combo1 from '../assets/Combo1.PNG'
+import Combo1 from '../assets/Combo1.png'
 import NavBar from '../components/NavBar'
 
 function Lanche() {

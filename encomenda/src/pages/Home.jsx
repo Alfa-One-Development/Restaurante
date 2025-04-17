@@ -26,7 +26,7 @@ function Home() {
         <header>
       <Header />
         <h1 className="title">Comida por encomenda! <br />
-        <p>Telefone: 📞(19)9099090 0090</p></h1>
+        <p>Telefone: 📞(11)98736-2753</p></h1>
         </header>
       <div className="Carrousel">
           {carrousel == 0 ? <img src={Combo} alt="carrouselFront" className="carimc" /> : ""}
