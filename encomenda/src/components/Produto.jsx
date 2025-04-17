@@ -36,7 +36,7 @@ function CardComida(){
 
     return (
         <>
-            <h2 className="Passagens">Cardapio</h2>
+            <h2 className="Passagens">Cardápio</h2>
 
             <article className="Cards">
 

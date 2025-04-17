@@ -4,6 +4,7 @@ import Produtos from "../components/Produto";
 import Combo from "../assets/Combo1.png";
 import HotDog from "../assets/Hot-Dog2.png";
 import Marmitex from "../assets/Marmitex.png";
+import '../styles/Home.css'
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -21,13 +22,16 @@ function Home() {
 
   return (
     <>
-      <Header />
       <section className="Main">
-        <h1>Home Page</h1>
+        <header>
+      <Header />
+        <h1 className="title">Comida por encomenda! <br />
+        <p>Telefone: 📞(11)98736-2753</p></h1>
+        </header>
       <div className="Carrousel">
-          {carrousel == 0 ? <img src={Combo} alt="carrouselFront" /> : ""}
-          {carrousel == 1 ? <img src={HotDog} alt="carrouselFront" /> : ""}
-          {carrousel == 2 ? <img src={Marmitex} alt="carrouselFront" /> : ""}
+          {carrousel == 0 ? <img src={Combo} alt="carrouselFront" className="carimc" /> : ""}
+          {carrousel == 1 ? <img src={HotDog} alt="carrouselFront" className="carim" /> : ""}
+          {carrousel == 2 ? <img src={Marmitex} alt="carrouselFront" className="carim" /> : ""}
         </div>
 
       <Produtos />
