@@ -14,7 +14,7 @@ function NavBar(){
             <br/>
             <Link to="/lanche3">🍽</Link>
             <br/>
-            <Link to="/contato">📞Contato</Link>
+            <Link to="/contato">📞</Link>
          
         </nav>
         </header>
