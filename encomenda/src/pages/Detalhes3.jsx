@@ -3,7 +3,7 @@ function Marmitex() {
     return (
         <div>
       <h1>Marmitex</h1>
-      <p>Detalhes da Marmitex...</p>
+      <p>Ingredientes : Arroz, Feijão, Farofa, Carne, Frango e Linguiça.</p>
       </div>
     )
 }
