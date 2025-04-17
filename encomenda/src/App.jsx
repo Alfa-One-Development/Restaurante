@@ -4,6 +4,7 @@ import Detalhes2 from './pages/Detalhes2';
 import Detalhes3 from './pages/Detalhes3';
 import Home from './pages/Home';
 
+import NavBar from './components/NavBar';
 import './App.css'
 
 function App() {
