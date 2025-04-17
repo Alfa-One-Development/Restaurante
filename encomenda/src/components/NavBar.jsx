@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import '../styles/Nav.css'
 
 
 function NavBar(){
@@ -6,13 +7,13 @@ function NavBar(){
         <header>
         <nav>
          
-            <Link to="/">🏡Home</Link>
+            <Link to="/">🏡</Link>
             <br/>
-            <Link to="/lanche1">🍔Lanche</Link>
+            <Link to="/lanche1">🍔</Link>
             <br/>
-            <Link to="/lanche2">🌭Hot-Dog</Link>
+            <Link to="/lanche2">🌭</Link>
             <br/>
-            <Link to="/lanche3">🍱Marmitex</Link>
+            <Link to="/lanche3">🍽</Link>
             <br/>
          
         </nav>

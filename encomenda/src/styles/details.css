@@ -1,0 +1,18 @@
+img{
+    max-width: 40vw;
+}
+
+.imgcon{
+    background-color: #fed7aa;
+    padding: 2em;
+    border-radius: 1em;
+  
+}
+
+.info{
+    background-color: #ffedd5;
+    padding: 2em;
+    border-radius: 1em;
+    
+}
+

@@ -1,52 +1,47 @@
 .Card {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    background-color: #991b1b;
-    color: white;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #991b1b;
+  color: white;
+  flex-wrap: wrap;
 
-    padding: 2em;
-    border-radius: 1em;
-    margin: 1em;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 1em;
 
-    
-   height: 40vw;
+  height: 40vw;
 
-    p{
-        max-width: 15em;
-    }
+  p {
+    max-width: 15em;
+  }
 
-    img {
-        height: 15em;
-        width: 20em;
-        object-fit: cover;
-        border-radius: 20px;
-    }
-
-    h2{
-        text-decoration: underline;
-    }
-}
-
-.bigcard{
-    background-color: #ef4444;
+  img {
+    height: 15em;
+    width: 20em;
+    object-fit: cover;
     border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
+  }
 
-    a::hover{
-       color: aqua;
-    }
-}
-.bigercard{
-    background-color: #f87171;
-    border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
+  h2 {
+    text-decoration: underline;
+  }
 }
 
-.Card::hover{
-    background-color: #f87171;
+.bigcard {
+  background-color: #ef4444;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.bigercard {
+  background-color: #f87171;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+Link::hover {
+  color: #f7d2c4;
 }
