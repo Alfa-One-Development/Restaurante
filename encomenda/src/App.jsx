@@ -1,4 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
 import Detalhes1 from './pages/Detalhes1';
 import Detalhes2 from './pages/Detalhes2';
 import Detalhes3 from './pages/Detalhes3';
@@ -16,9 +17,9 @@ function App() {
            <NavBar />
 
           <Route path="/" element={<Home />} />
-          <Route path="/lanche1" element={<Detalhes1 />} />
-          <Route path="/lanche2" element={<Detalhes2 />} />
-          <Route path="/lanche3" element={<Detalhes3 />} />
+          <Route path="/Detalhes1" element={<Detalhes1 />} />
+          <Route path="/Detalhes2" element={<Detalhes2 />} />
+          <Route path="/Detalhes3" element={<Detalhes3 />} />
 
         </Routes>
       </BrowserRouter>
