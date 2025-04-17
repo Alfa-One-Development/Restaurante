@@ -1,5 +1,6 @@
 import Combo1 from "../assets/Combo1.png";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import "../styles/details.css";
 
 function Lanche() {
@@ -19,6 +20,7 @@ function Lanche() {
           </p>
         </section>
       </section>
+      <Footer/>
     </div>
   );
 
