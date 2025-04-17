@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
@@ -8,6 +8,19 @@ function Contato(){
    const [nome, setNome] = useState('')
    const [email, setEmail] = useState('')
     const [escolaridade, setEscolaridade] = useState('')
+    const [Opção, setOpção] = useState('')
+    const [lanche, setLanche] = useState('')
+
+    useEffect (() => {
+        const ProdutoSalvo = localStorage.getItem('lanche')
+        if (ProdutoSalvo) {
+            setLanche(ProdutoSalvo)
+        }
+    }, [])
+    const handlesave = () => {
+        localStorage.setItem('lanche', lanche)
+    }
+
    return(
       
          <div>
@@ -54,11 +67,22 @@ function Contato(){
          Feminino
          </form>
          
+         <br></br>
+         
+         <label>Opção: </label>
+        <select onChange={(e) => setOpção(e.target.value)} value={Opção}>
+          <option value="" >Selecione Uma Opção</option>
+          <option value="opção 1"> opção 1 </option>
+          <option value="opção 2"> opção 2 </option>
+          <option value="opção 3"> opção 3 </option>
+        </select>
            <br></br>
+           <br></br>
+        
         <label>Escolaridade: </label>
         <select onChange={(e) => setEscolaridade(e.target.value)} value={escolaridade}>
           <option value="" >Selecione Uma Opção</option>
-          <option value="1° garu"> 1° grau </option>
+          <option value="1° grau"> 1° grau </option>
           <option value="2° grau"> 2° grau </option>
           <option value="graduação"> Graduação </option>
           <option value="pós-graduação"> Pós-Graduação </option>
@@ -68,6 +92,9 @@ function Contato(){
            <br></br>
            
            <h3>Tel  (11)98736-2753 </h3>
+           
+            <button onClick={handlesave}>Enviar</button>
+           
            </div>
 
 
