@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 
-
-
-
 function Contato(){
    const [contato1, setContato1] = useState('')
    const [nome, setNome] = useState('')

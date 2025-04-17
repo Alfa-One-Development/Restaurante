@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-
 function NavBar(){
     return(
         <header>
@@ -14,6 +13,7 @@ function NavBar(){
             <br/>
             <Link to="/lanche3">🍱Marmitex</Link>
             <br/>
+            <Link to="/contato">📞Contato</Link>
          
         </nav>
         </header>
