@@ -91,7 +91,7 @@ function Contato(){
 
            <br></br>
            
-           <h3>Tel  (11)98736-2753 </h3>
+           <h3>Tel 📞 (11)98736-2753 </h3>
            
             <button onClick={handlesave}>Enviar</button>
            
