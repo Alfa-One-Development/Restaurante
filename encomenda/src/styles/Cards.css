@@ -1,0 +1,25 @@
+.Card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: brown;
+    flex-wrap: wrap;
+
+    padding: 2em;
+    border-radius: 1em;
+    margin: 1em;
+
+    
+   height: 40vw;
+
+    p{
+        max-width: 15em;
+    }
+
+    img {
+        height: 15em;
+        width: 20em;
+        object-fit: cover;
+    }
+}
