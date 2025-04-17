@@ -1,5 +1,6 @@
 import { useState } from "react";
 import '../styles/Contato.css'
+import { Link } from "react-router-dom";
 
 function Contato() {
   const [contato1, setContato1] = useState(() => {
@@ -41,12 +42,13 @@ function Contato() {
 
   return (
 
-    <div>
+    <div className="box">
       <h2>Contato</h2>
+      <h3>Tel 📞 (11)98736-2753 </h3>
       <form onSubmit={Enviar}>
         <label>Nome: 
-          <br/>
-        <input
+          
+        <input className="input"
           type="text"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
@@ -58,8 +60,7 @@ function Contato() {
         <br/>
 
       <label>Email: 
-      <br/>
-        <input
+        <input className="input"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -71,7 +72,7 @@ function Contato() {
         <br/>
 
       <label>Genero: 
-      <br/>
+      
         <input
           type="radio"
           value="Masculino"
@@ -93,7 +94,7 @@ function Contato() {
         <br/>
 
       <label>Opção: 
-      <br/>
+    
       <select onChange={(e) => setOpção(e.target.value)} value={Opção}>
         <option value="" >Selecione Uma Opção</option>
         <option value="opção 1"> opção 1 </option>
@@ -106,7 +107,7 @@ function Contato() {
       <br/>
 
       <label>Escolaridade: 
-      <br/>
+    
       <select onChange={(e) => setEscolaridade(e.target.value)} value={escolaridade}>
         <option value="" >Selecione Uma Opção</option>
         <option value="1° grau"> 1° grau </option>
@@ -119,11 +120,13 @@ function Contato() {
       <br/>
       <br/>
 
-      <h3>Tel 📞 (11)98736-2753 </h3>
 
       <br/>
 
+      <div className="button-container">
       <button type="submit">Enviar</button>
+      <Link to="/"><button type="button">Voltar</button></Link>
+      </div>
 
       </form>
 
