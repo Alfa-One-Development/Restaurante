@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import HotDog2 from '../assets/HotDog2'
+import HotDog2 from '../assets/Hot-Dog2.png'
 
 function HotDog() {
 

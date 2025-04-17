@@ -5,7 +5,6 @@ import Detalhes2 from './pages/Detalhes2';
 import Detalhes3 from './pages/Detalhes3';
 import Home from './pages/Home';
 
-import NavBar from './components/NavBar';
 import './App.css'
 
 function App() {
@@ -14,12 +13,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-           <NavBar />
 
           <Route path="/" element={<Home />} />
-          <Route path="/Detalhes1" element={<Detalhes1 />} />
-          <Route path="/Detalhes2" element={<Detalhes2 />} />
-          <Route path="/Detalhes3" element={<Detalhes3 />} />
+          <Route path="/lanche1" element={<Detalhes1 />} />
+          <Route path="/lanche2" element={<Detalhes2 />} />
+          <Route path="/lanche3" element={<Detalhes3 />} />
 
         </Routes>
       </BrowserRouter>
